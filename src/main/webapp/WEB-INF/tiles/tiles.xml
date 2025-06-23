@@ -1,0 +1,25 @@
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+    <definition name="base.definition" template="/WEB-INF/views/layout.jsp">
+        <put-attribute name="title" value="Employee Management" />
+        <put-attribute name="body" value="" />
+    </definition>
+
+    <definition name="employee-add-edit" extends="base.definition">
+        <put-attribute name="title" value="Add Employee"/>
+        <put-attribute name="body" value="/WEB-INF/views/employee-add-edit.jsp"/>
+    </definition>
+
+    <definition name="employee-list" extends="base.definition">
+        <put-attribute name="title" value="Employee List"/>
+        <put-attribute name="body" value="/WEB-INF/views/employee-list.jsp"/>
+    </definition>
+
+    <definition name="employee-view" extends="base.definition">
+        <put-attribute name="title" value="Employee Details"/>
+        <put-attribute name="body" value="/WEB-INF/views/employee-view.jsp"/>
+    </definition>
+</tiles-definitions>

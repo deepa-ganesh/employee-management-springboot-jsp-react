@@ -1,0 +1,343 @@
+.employee-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 84px 20px 20px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.employee-container h2 {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+
+.employee-container.detail-view .employee-card,
+.employee-container.form-view .employee-card {
+  max-width: 700px;
+}
+
+.employee-container.detail-view,
+.employee-container.form-view {
+  min-height: calc(100vh - 64px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 84px 20px 20px;
+}
+
+.employee-container.detail-view .employee-card {
+  margin-top: 0;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.employee-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.add-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.employee-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0;
+  background-color: white;
+}
+
+.employee-table th,
+.employee-table td {
+  padding: 16px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+  white-space: nowrap;
+}
+
+.employee-table td:last-child {
+  width: 200px;
+}
+
+.employee-table tr:last-child td {
+  border-bottom: none;
+}
+
+.employee-table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+.employee-table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  color: #555;
+}
+
+.action-links a, .action-links button {
+  color: #1976d2;
+  text-decoration: none;
+  margin-right: 16px;
+  background: none;
+  border: none;
+  padding: 4px 8px;
+  font: inherit;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.action-links button.delete {
+  color: #dc3545;
+}
+
+.action-links a:hover,
+.action-links button:hover {
+  background-color: rgba(25, 118, 210, 0.1);
+}
+
+.action-links button.delete:hover {
+  background-color: #dc3545;
+  color: white;
+}
+
+.action-links button:hover {
+  text-decoration: underline;
+}
+
+.action-links a:hover {
+  text-decoration: underline;
+}
+
+form .card-content {
+  padding: 32px;
+}
+
+form .detail-value input,
+form .detail-value select {
+  width: 100%;
+  height: 36px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #333;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+  height: 36px;
+  background-color: #fff;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #1976d2;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(25, 118, 210, 0.1);
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 0.85em;
+  margin-top: 5px;
+  padding: 5px 8px;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  border-radius: 4px;
+  margin-bottom: 5px;
+}
+
+.submit-button {
+  background-color: #1976d2;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #1565c0;
+}
+
+.salary-group {
+  display: flex;
+  gap: 10px;
+}
+
+.salary-group input {
+  flex: 1;
+}
+
+.salary-group select {
+  width: 100px;
+}
+
+.employee-card {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.card-header {
+  background: #f8f9fa;
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-header h2 {
+  margin: 0;
+  color: #333;
+}
+
+.employee-id {
+  font-size: 1.1em;
+  color: #666;
+  font-weight: 500;
+}
+
+.card-content {
+  padding: 32px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.detail-section {
+  padding: 0;
+  width: 100%;
+  margin: 0 auto;
+  display: table;
+  border-collapse: separate;
+  border-spacing: 0 20px;
+}
+
+.detail-row {
+  display: table-row;
+}
+
+.detail-row:last-child {
+  margin-bottom: 0;
+}
+
+.detail-label {
+  display: table-cell;
+  width: 30%;
+  font-weight: 600;
+  color: #555;
+  padding-right: 16px;
+}
+
+
+.detail-value {
+  display: table-cell;
+  color: #333;
+  width: 70%;
+  font-weight: 500;
+  padding-right: 16px;
+}
+
+.detail-value input,
+.detail-value select {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+
+.detail-value input:focus,
+.detail-value select:focus {
+  border-color: #1976d2;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(25, 118, 210, 0.1);
+}
+
+.detail-value .salary-group {
+  display: flex;
+  gap: 12px;
+}
+
+.detail-value .salary-group input {
+  width: 70%;
+}
+
+.detail-value .salary-group select {
+  width: 30%;
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 0.85em;
+  margin-top: 4px;
+  font-weight: normal;
+  white-space: normal;
+}
+
+.detail-value.salary {
+  font-family: monospace;
+  font-size: 1.1em;
+}
+
+.card-footer {
+  padding: 20px;
+  background: #f8f9fa;
+  border-top: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.back-link, .edit-link {
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.back-link {
+  color: #666;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+.back-link:hover {
+  background: #f0f0f0;
+  text-decoration: none;
+}
+
+.edit-link {
+  background: #1976d2;
+  color: white;
+}
+
+.edit-link:hover {
+  background: #1565c0;
+  text-decoration: none;
+}
+
